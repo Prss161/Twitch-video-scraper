@@ -1,13 +1,16 @@
-# Webscraping-Twitch-with-selenium(POC)
-This is POC
+# Twitch-video-scraper
 
-## How to use it?
+## Introduction
+This script allows scraping top 20 clips in selected category on Twitch website. Storing clips metadata - origin url, title, channel name in csv format.
 
-1. Go to https://www.twitch.tv/directory
-2. Select the category that u are interested in and choose clips.
-3. Copy and paste url to url.txt
-4. Run main.py by using terminal
+## Getting Started
+Project tested using Python 3.10.11 64-bit, requirements are available in requirements.txt.
 
-## How it works
+## How it works?
+When we start the `main.py`, the program ask us for url link for twitch website that contains clips (www.twitch.tv/directory/category/just-chatting/clips?range=all) you can use any category for downloading the clips. By using `Selenium WebDriver` we can scrap data from any website. The data that we are intested in is url, title and channel of a clip by using XPATH. Finnaly selected data is saved in csv file.
 
-The script is scraping clips by selecting the top 20 on the page. Gives you url to clip, title, channel and save it to clips.csv (Categories are in Polish)
+## How to run code
+To run the code use command:
+```bash
+$ python main.py
+ ```
